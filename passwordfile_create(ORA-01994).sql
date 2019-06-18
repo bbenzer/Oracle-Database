@@ -1,4 +1,5 @@
 /*
+ORA-01994:
 Poblem here was the orapwd file created with upper case ORACLE_SID but the actual instance name is setted with lower case.
 In order solve this problem we need to create new oracle password file with using orapwd utility.
 
@@ -18,3 +19,12 @@ dbs]$ orapwd file=/u01/app/oracle/product/11.2.0/db_1/dbs/orapw$ORACLE_SID passw
 SQL> grant sysdba to bbenzerdba;
 
 Grant succeeded.
+
+
+
+/*
+ORA-01950: no privileges on tablespace "Users"
+
+*/
+
+alter user test quota unlimited on USERS;
