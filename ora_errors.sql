@@ -20,7 +20,7 @@ SQL> grant sysdba to bbenzerdba;
 
 Grant succeeded.
 
-
+-----------------------------
 
 /*
 ORA-01950: no privileges on tablespace "Users"
@@ -28,3 +28,5 @@ ORA-01950: no privileges on tablespace "Users"
 */
 
 alter user test quota unlimited on USERS;
+
+-----------------------------
