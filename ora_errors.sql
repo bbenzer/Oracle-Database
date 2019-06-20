@@ -45,6 +45,8 @@ select table_name,ROW_MOVEMENT from dba_tables where table_name='TEST'
 
 ALTER TABLE ORDERS.TEST ENABLE ROW MOVEMENT ;
 
+--------------------------------------------------------------------
+
 /*
 
 ORA-19815: WARNING: db_recovery_file_dest_size of 4385144832 bytes is 100.00% used, and has 0 remaining bytes available.
