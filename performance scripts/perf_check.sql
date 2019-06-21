@@ -13,8 +13,8 @@ epsilon e
 where a.metric_name='SQL Service Response Time'
 and b.metric_name='User Calls Per Sec'
 and a.snap_id = b.snap_id
- 16  and b.average between e.m1 and e.m2
- 17  ;
+   and b.average between e.m1 and e.m2
+   ;
 
   A - Good    Average	 B - Bad
 ---------- ---------- ----------
@@ -27,8 +27,8 @@ If response time bigger then 6.39170922 you need to check the instance.
 */
 
 select to_char(begin_time,'hh24:mi') time,  value "Response Time"
-  2  from v$sysmetric
-  3  where metric_name='SQL Service Response Time';
+    from v$sysmetric
+    where metric_name='SQL Service Response Time';
 
 TIME  Response Time
 ----- -------------
