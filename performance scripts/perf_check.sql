@@ -22,7 +22,7 @@ and a.snap_id = b.snap_id
 
 
 /*
-If response time bigger then 6.39170922 you need to check instance.
+If response time bigger then 6.39170922 you need to check the instance.
 
 */
 
